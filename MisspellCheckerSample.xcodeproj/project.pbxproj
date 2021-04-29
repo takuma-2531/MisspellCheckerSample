@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		2639148B263A6EB300309C04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2639148A263A6EB300309C04 /* AppDelegate.swift */; };
 		2639148D263A6EB300309C04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2639148C263A6EB300309C04 /* SceneDelegate.swift */; };
-		2639148F263A6EB300309C04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2639148E263A6EB300309C04 /* ViewController.swift */; };
-		26391492263A6EB300309C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26391490263A6EB300309C04 /* Main.storyboard */; };
+		2639148F263A6EB300309C04 /* MisspellCheckerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2639148E263A6EB300309C04 /* MisspellCheckerViewController.swift */; };
 		26391494263A6EB300309C04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26391493263A6EB300309C04 /* Assets.xcassets */; };
 		26391497263A6EB300309C04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26391495263A6EB300309C04 /* LaunchScreen.storyboard */; };
+		2639149F263A6F7B00309C04 /* MisspellChecker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2639149E263A6F7B00309C04 /* MisspellChecker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26391487263A6EB300309C04 /* MisspellCheckerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisspellCheckerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2639148A263A6EB300309C04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2639148C263A6EB300309C04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2639148E263A6EB300309C04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26391491263A6EB300309C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2639148E263A6EB300309C04 /* MisspellCheckerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisspellCheckerViewController.swift; sourceTree = "<group>"; };
 		26391493263A6EB300309C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26391496263A6EB300309C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26391498263A6EB300309C04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2639149E263A6F7B00309C04 /* MisspellChecker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MisspellChecker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				2639148A263A6EB300309C04 /* AppDelegate.swift */,
 				2639148C263A6EB300309C04 /* SceneDelegate.swift */,
-				2639148E263A6EB300309C04 /* ViewController.swift */,
-				26391490263A6EB300309C04 /* Main.storyboard */,
+				2639148E263A6EB300309C04 /* MisspellCheckerViewController.swift */,
+				2639149E263A6F7B00309C04 /* MisspellChecker.storyboard */,
 				26391493263A6EB300309C04 /* Assets.xcassets */,
 				26391495263A6EB300309C04 /* LaunchScreen.storyboard */,
 				26391498263A6EB300309C04 /* Info.plist */,
@@ -126,7 +126,7 @@
 			files = (
 				26391497263A6EB300309C04 /* LaunchScreen.storyboard in Resources */,
 				26391494263A6EB300309C04 /* Assets.xcassets in Resources */,
-				26391492263A6EB300309C04 /* Main.storyboard in Resources */,
+				2639149F263A6F7B00309C04 /* MisspellChecker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2639148F263A6EB300309C04 /* ViewController.swift in Sources */,
+				2639148F263A6EB300309C04 /* MisspellCheckerViewController.swift in Sources */,
 				2639148B263A6EB300309C04 /* AppDelegate.swift in Sources */,
 				2639148D263A6EB300309C04 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +146,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		26391490263A6EB300309C04 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26391491263A6EB300309C04 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26391495263A6EB300309C04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

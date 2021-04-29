@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Misspell Checker View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MisspellCheckerViewController" customModule="MisspellCheckerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SRM-Xz-Ow7">
+                                <rect key="frame" x="20" y="561" width="374" height="201"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYb-2U-zPv">
+                                <rect key="frame" x="150" y="455" width="114" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dNv-Js-l4b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHG-Fc-5pO">
+                                <rect key="frame" x="20" y="62" width="374" height="81.5"/>
+                                <string key="text">英単語のスペルをチェックします。
+英単語をスペースで区切って入力し、Checkボタンを押してください。
+スペルミスがある場合、下に表示されます。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uS1-ci-izQ">
+                                <rect key="frame" x="20" y="183.5" width="374" height="201.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pYb-2U-zPv" firstAttribute="top" secondItem="uS1-ci-izQ" secondAttribute="bottom" constant="70" id="8bz-vH-zay"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uS1-ci-izQ" secondAttribute="trailing" constant="20" id="FFb-C6-Gm3"/>
+                            <constraint firstItem="SRM-Xz-Ow7" firstAttribute="top" secondItem="pYb-2U-zPv" secondAttribute="bottom" constant="70" id="Ihj-b6-K06"/>
+                            <constraint firstItem="AHG-Fc-5pO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="RZ4-n4-r6L"/>
+                            <constraint firstItem="SRM-Xz-Ow7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="YBX-dm-bgh"/>
+                            <constraint firstItem="SRM-Xz-Ow7" firstAttribute="height" secondItem="uS1-ci-izQ" secondAttribute="height" id="aTI-Ak-GXf"/>
+                            <constraint firstItem="AHG-Fc-5pO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="18" id="g0Y-Rv-hmR"/>
+                            <constraint firstItem="pYb-2U-zPv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="ixk-Dr-Yo5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SRM-Xz-Ow7" secondAttribute="trailing" constant="20" id="jDS-S6-sSh"/>
+                            <constraint firstItem="uS1-ci-izQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="jjc-sb-KXc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pYb-2U-zPv" secondAttribute="trailing" constant="150" id="koy-Qi-PLE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AHG-Fc-5pO" secondAttribute="trailing" constant="20" id="pnc-oO-leG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="SRM-Xz-Ow7" secondAttribute="bottom" constant="100" id="v0R-lk-66x"/>
+                            <constraint firstItem="uS1-ci-izQ" firstAttribute="top" secondItem="AHG-Fc-5pO" secondAttribute="bottom" constant="40" id="vz1-tl-Rq7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="uS1-ci-izQ" id="TVm-Y0-ayn"/>
+                        <outlet property="outputTextView" destination="SRM-Xz-Ow7" id="gG1-pd-qBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-795.6521739130435" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
