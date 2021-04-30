@@ -6,7 +6,7 @@ https://www.ioscreator.com/tutorials/spell-checker-ios-tutorial
 ### アプリの動作
 上のテキストビューに英単語をスペース区切りで入力  
 ↓  
-Checkボタン押下  
+Checkボタンタップ  
 ↓  
 下のテキストビューにミススペルの単語を表示  
 
